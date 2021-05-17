@@ -53,7 +53,35 @@
 
     <div class="container py-4">
         <h1 class="display-5">Register Extra Class</h1>
-        
+        <form class="my-4" action="index.html">
+            <div class="mb-3">
+              <label for="exampleInputCourse1" class="form-label">Course</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>-- Course --</option>
+                <option value="COMP6048">COMP6047 - Algorithm and Programming</option>
+                <option value="COMP6048">COMP6048 - Data Structures</option>
+                <option value="COMP6140">COMP6140 - Data Mining</option>
+                <option value="COMP7084">COMP7084 - Multimedia Systems</option>
+                <option value="COMP7084">COMP7117 - Artificial Neural Network</option>
+                <option value="ISYS6123">ISYS6123 - Introduction to Database Systems</option>
+                <option value="ISYS6169">ISYS6169 - Database Systems</option>
+              </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputDate1" class="form-label">Date and Time</label>
+                <input type="date" class="form-control mb-2" id="exampleInputDate1">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>-- Time --</option>
+                  <option value="1">07:20 - 09:00 (Shift 1)</option>
+                  <option value="2">09:20 - 11:00 (Shift 2)</option>
+                  <option value="3">11:20 - 13:00 (Shift 3)</option>
+                  <option value="4">13:20 - 15:00 (Shift 4)</option>
+                  <option value="5">15:20 - 17:00 (Shift 5)</option>
+                  <option value="6">17:20 - 19:00 (Shift 6)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-light blue-button">Register</button>
+        </form>
     </div>
 </body>
 </html>

@@ -68,9 +68,18 @@
               </select>
             </div>
             <div class="mb-3">
-              <label for="exampleInputDate1" class="form-label">Date</label>
-              <input type="date" class="form-control" id="exampleInputDate1">
-              <div id="dateHelp" class="form-text">Date may change according to available assistant schedule.</div>
+                <label for="exampleInputDate1" class="form-label">Date and Time</label>
+                <input type="date" class="form-control mb-2" id="exampleInputDate1">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>-- Time --</option>
+                  <option value="1">07:20 - 09:00 (Shift 1)</option>
+                  <option value="2">09:20 - 11:00 (Shift 2)</option>
+                  <option value="3">11:20 - 13:00 (Shift 3)</option>
+                  <option value="4">13:20 - 15:00 (Shift 4)</option>
+                  <option value="5">15:20 - 17:00 (Shift 5)</option>
+                  <option value="6">17:20 - 19:00 (Shift 6)</option>
+                </select>
+                <div id="astHelp" class="form-text">Date and time may change according to available assistant schedule.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputAst1" class="form-label">Assistants</label>
@@ -99,7 +108,7 @@
                     <option value="WM20-2">WM20-2 - William Martin</option>
                 </select>
                 <div id="astHelp" class="form-text">Assistants may change according to available assistant schedule.</div>
-              </div>
+            </div>
             <button type="submit" class="btn btn-light blue-button">Submit</button>
         </form>
     </div>
