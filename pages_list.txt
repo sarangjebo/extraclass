@@ -1,0 +1,12 @@
+Student:
+- Extra class schedule [HOME] (pengajar siapa, materinya apa)
+- Request extra class (form)
+- Register extra class (form) -> ga bisa cancel
+
+Assistant:
+- Extra class schedule [HOME] 
+- Extra class detail (siapa aja yg daftar)
+- Student Score List 
+- Poor scoring courses
+- View Extra Class requests
+- Add Extra class
