@@ -1,3 +1,7 @@
+.content{
+    min-height: 72vh;
+}
+
 .my-navbar{
     padding-top: 0;
     padding-bottom: 0;
@@ -19,4 +23,13 @@
     color: white;
     border: 1px solid #0098d7;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: #0098d7;
+    color: white;
+    height: 200px;
+}
+footer a{
+    color: white;
 }
