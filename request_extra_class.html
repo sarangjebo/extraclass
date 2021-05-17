@@ -30,6 +30,9 @@
             <div class="collapse navbar-collapse my-navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
                 <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Schedule</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" aria-current="page"  href="request_extra_class.html">Request</a>
                 </li>
                 <li class="nav-item">
@@ -50,7 +53,55 @@
 
     <div class="container py-4">
         <h1 class="display-5">Request Extra Class Schedule</h1>
-        
+        <form class="my-4" action="index.html">
+            <div class="mb-3">
+              <label for="exampleInputCourse1" class="form-label">Course</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>-- Course --</option>
+                <option value="COMP6048">COMP6047 - Algorithm and Programming</option>
+                <option value="COMP6048">COMP6048 - Data Structures</option>
+                <option value="COMP6140">COMP6140 - Data Mining</option>
+                <option value="COMP7084">COMP7084 - Multimedia Systems</option>
+                <option value="COMP7084">COMP7117 - Artificial Neural Network</option>
+                <option value="ISYS6123">ISYS6123 - Introduction to Database Systems</option>
+                <option value="ISYS6169">ISYS6169 - Database Systems</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputDate1" class="form-label">Date</label>
+              <input type="date" class="form-control" id="exampleInputDate1">
+              <div id="dateHelp" class="form-text">Date may change according to available assistant schedule.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputAst1" class="form-label">Assistants</label>
+                <select class="form-select mb-2" aria-label="Default select example">
+                    <option selected>-- Assistant1 --</option>
+                    <option value="AT20-1">AT20-1 - Adinata Susanto</option>
+                    <option value="CO21-1">CO21-1 - Cody Tanaka</option>
+                    <option value="DY20-1">DY20-1 - Devia Liany</option>
+                    <option value="ES20-2">ES20-2 - Elisa Patricia</option>
+                    <option value="JB20-1">JB20-1 - Joan Christina Bahagiono</option>
+                    <option value="KN20-2">KN20-2 - Kendricko Adrio</option>
+                    <option value="LE20-2">LE20-2 - Nicholas Leonardo</option>
+                    <option value="SA20-1">SA20-1 - Shania Priccilia</option>
+                    <option value="WM20-2">WM20-2 - William Martin</option>
+                </select>
+                <select class="form-select mb-2" aria-label="Default select example">
+                    <option selected>-- Assistant2 --</option>
+                    <option value="AT20-1">AT20-1 - Adinata Susanto</option>
+                    <option value="CO21-1">CO21-1 - Cody Tanaka</option>
+                    <option value="DY20-1">DY20-1 - Devia Liany</option>
+                    <option value="ES20-2">ES20-2 - Elisa Patricia</option>
+                    <option value="JB20-1">JB20-1 - Joan Christina Bahagiono</option>
+                    <option value="KN20-2">KN20-2 - Kendricko Adrio</option>
+                    <option value="LE20-2">LE20-2 - Nicholas Leonardo</option>
+                    <option value="SA20-1">SA20-1 - Shania Priccilia</option>
+                    <option value="WM20-2">WM20-2 - William Martin</option>
+                </select>
+                <div id="astHelp" class="form-text">Assistants may change according to available assistant schedule.</div>
+              </div>
+            <button type="submit" class="btn btn-light blue-button">Submit</button>
+        </form>
     </div>
 </body>
 </html>
