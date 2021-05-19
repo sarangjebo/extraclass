@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">    
+    <script async defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./../css/master.css">
+
+    <!-- js -->
+    <script async defer src="schedule.js"></script>
+
+    <title>Extra Class</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light my-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand my-navbar-brand" href="index.html">
+                <img class="ribbon" src="./../assets/ribbon.png" alt="ribbon">
+                <div class="logo-container">
+                    <img src="./../assets/logo.svg" alt="logo">
+                </div>
+            </a>
+            <a class="navbar-brand" href="index.html">Extra Class</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse my-navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#scoreDropdown" aria-controls="navbarNavDropdown" href="">View Score</a>
+                    <div class="dropdown-menu" id="scoreDropdown">
+                        <a class="dropdown-item" href="view_score.html">View Courses Score</a>
+                        <a class="dropdown-item" href="student_score.html">View Student Score</a>
+                    </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#classDropdown" aria-controls="navbarNavDropdown" href="">Manage Class</a>
+                    <div class="dropdown-menu" id="classDropdown">
+                        <a class="dropdown-item" href="view_extra_class_request.html">View Extra Class Request</a>
+                        <a class="dropdown-item" href="add_extra_class.html">Add Extra Class</a>
+                    </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Username</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light blue-button" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4 content">
+        <h1 class="display-5 mb-5">Student Score</h1>
+        <form action="" method="get">
+            <div class="form-group row mb-2">
+                <label for="course" class="font-weight-bold col-md-2 col-form-label text-md-right">Course Code</label>
+                <div class="col-md-4">
+                    <input id="course" type="text" class="form-control" name="couse" required>
+                </div>
+            </div>
+            <div class="form-group row mb-2">
+                <label for="class" class="font-weight-bold col-md-2 col-form-label text-md-right">Class</label>
+                <div class="col-md-4">
+                    <input id="class" type="text" class="form-control" name="couse" required>
+                </div>
+            </div>
+            <input type="submit" value="Search" class="btn btn-primary">
+        </form>
+        <h5 class="mt-5">COMP6048 - Data Structures - B901</h5>
+        <div id="schedule-container" class="my-4">
+            <div class="my-5">
+                <table class="table table-striped table-hover" id="scoreTable">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="col-md-1">NIM</th>
+                        <th scope="col" class="col-md-3">Name</th>
+                        <th scope="col" class="col-md-1">Score</th>
+                        <th scope="col" class="col-md-1">Pass</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">2201786036</th>
+                        <td>Shania Priccilia</td>
+                        <td>90</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201790120</th>
+                        <td>Joan Christina Bahagiono</td>
+                        <td>95</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201786011</th>
+                        <td>Valencia Verena</td>
+                        <td>84</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201733036</th>
+                        <td>Shinta Dewi</td>
+                        <td>76</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201711222</th>
+                        <td>Hossana Adinna Putri</td>
+                        <td>92</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201792022</th>
+                        <td>Ucup Sentosa</td>
+                        <td>50</td>
+                        <td>Not Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201712902</th>
+                        <td>James Bond</td>
+                        <td>12</td>
+                        <td>Not Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201786011</th>
+                        <td>Shania Priccilia</td>
+                        <td>90</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201782036</th>
+                        <td>Wenny Firstriany</td>
+                        <td>90</td>
+                        <td>Pass</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2201733677</th>
+                        <td>Jasmine Tanti</td>
+                        <td>88</td>
+                        <td>Pass</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid d-flex flex-column align-items-center justify-content-center">
+      <p>&copy;2021 Laboratory Center Alam Sutera</p>
+      <p>Contact Us: <a class="link" href="https://linktr.ee/OfficialAccountSlc" target="_blank">SLC Official Account</a></p>
+    </footer>
+    <script>
+        $('#scoreTable').DataTable();
+    </script>
+</body>
+</html>
