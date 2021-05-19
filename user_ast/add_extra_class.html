@@ -12,6 +12,9 @@
     <!-- css -->
     <link rel="stylesheet" href="./../css/master.css">
 
+    <!-- js -->
+    <script async defer src="schedule.js"></script>
+
     <title>Extra Class</title>
 </head>
 <body>
@@ -29,12 +32,20 @@
             </button>
             <div class="collapse navbar-collapse my-navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link"  href="request_extra_class.html">Request</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="register_extra_class.html">Register</a>
-                </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#scoreDropdown" aria-controls="navbarNavDropdown" href="">View Score</a>
+                    <div class="dropdown-menu" id="scoreDropdown">
+                        <a class="dropdown-item" href="view_score.html">View Courses Score</a>
+                        <a class="dropdown-item" href="student_score.html">View Student Score</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#classDropdown" aria-controls="navbarNavDropdown" href="">Manage Class</a>
+                    <div class="dropdown-menu" id="classDropdown">
+                        <a class="dropdown-item" href="view_extra_class_request.html">View Extra Class Request</a>
+                        <a class="dropdown-item" href="add_extra_class.html">Add Extra Class</a>
+                    </div>
+                  </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -49,7 +60,7 @@
     </nav>
 
     <div class="container py-4 content">
-        <h1 class="display-5">Register Extra Class</h1>
+        <h1 class="display-5">Add Extra Class Schedule</h1>
         <form class="my-4" action="index.html">
             <div class="mb-3">
               <label for="exampleInputCourse1" class="form-label">Course</label>
@@ -77,13 +88,40 @@
                   <option value="6">17:20 - 19:00 (Shift 6)</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-light blue-button">Register</button>
+            <div class="mb-3">
+                <label for="exampleInputAst1" class="form-label">Assistants</label>
+                <select class="form-select mb-2" aria-label="Default select example">
+                    <option selected>-- Assistant1 --</option>
+                    <option value="AT20-1">AT20-1 - Adinata Susanto</option>
+                    <option value="CO21-1">CO21-1 - Cody Tanaka</option>
+                    <option value="DY20-1">DY20-1 - Devia Liany</option>
+                    <option value="ES20-2">ES20-2 - Elisa Patricia</option>
+                    <option value="JB20-1">JB20-1 - Joan Christina Bahagiono</option>
+                    <option value="KN20-2">KN20-2 - Kendricko Adrio</option>
+                    <option value="LE20-2">LE20-2 - Nicholas Leonardo</option>
+                    <option value="SA20-1">SA20-1 - Shania Priccilia</option>
+                    <option value="WM20-2">WM20-2 - William Martin</option>
+                </select>
+                <select class="form-select mb-2" aria-label="Default select example">
+                    <option selected>-- Assistant2 --</option>
+                    <option value="AT20-1">AT20-1 - Adinata Susanto</option>
+                    <option value="CO21-1">CO21-1 - Cody Tanaka</option>
+                    <option value="DY20-1">DY20-1 - Devia Liany</option>
+                    <option value="ES20-2">ES20-2 - Elisa Patricia</option>
+                    <option value="JB20-1">JB20-1 - Joan Christina Bahagiono</option>
+                    <option value="KN20-2">KN20-2 - Kendricko Adrio</option>
+                    <option value="LE20-2">LE20-2 - Nicholas Leonardo</option>
+                    <option value="SA20-1">SA20-1 - Shania Priccilia</option>
+                    <option value="WM20-2">WM20-2 - William Martin</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-light blue-button">Submit</button>
         </form>
     </div>
 
     <footer class="container-fluid d-flex flex-column align-items-center justify-content-center">
-        <p>&copy;2021 Laboratory Center Alam Sutera</p>
-        <p>Contact Us: <a class="link" href="https://linktr.ee/OfficialAccountSlc" target="_blank">SLC Official Account</a></p>
+      <p>&copy;2021 Laboratory Center Alam Sutera</p>
+      <p>Contact Us: <a class="link" href="https://linktr.ee/OfficialAccountSlc" target="_blank">SLC Official Account</a></p>
     </footer>
 </body>
 </html>

@@ -66,94 +66,102 @@
     </nav>
 
     <div class="container py-4 content">
-        <h1 class="display-5 mb-5">Student Score</h1>
-        <form action="" method="get">
-            <div class="form-group row mb-2">
-                <label for="course" class="font-weight-bold col-md-2 col-form-label text-md-right">Course Code</label>
-                <div class="col-md-4">
-                    <input id="course" type="text" class="form-control" name="couse" required>
-                </div>
+        <h1 class="display-5 mb-5">Extra Class Detail</h1>
+        <div class="form-group row">
+            <label for="course" class="font-weight-bold col-md-2 col-form-label text-md-right">Course Code</label>
+            <div class="col-md-4">
+                : COMP6048 - Data Structures
             </div>
-            <div class="form-group row mb-2">
-                <label for="class" class="font-weight-bold col-md-2 col-form-label text-md-right">Class</label>
-                <div class="col-md-4">
-                    <input id="class" type="text" class="form-control" name="couse" required>
-                </div>
+        </div>
+        <div class="form-group row">
+            <label for="date" class="font-weight-bold col-md-2 col-form-label text-md-right">Date</label>
+            <div class="col-md-4">
+                : 06/06/2021
             </div>
-            <input type="submit" value="Search" class="btn btn-primary">
-        </form>
-        <h5 class="mt-5">COMP6048 - Data Structures - B901</h5>
+        </div>
+        <div class="form-group row">
+            <label for="time" class="font-weight-bold col-md-2 col-form-label text-md-right">Time</label>
+            <div class="col-md-4">
+                : 11:20 - 13:00 (Shift 3)
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ast" class="font-weight-bold col-md-2 col-form-label text-md-right">Assistants</label>
+            <div class="col-md-4">
+                : JB20-1, SA20-1
+            </div>
+        </div>
         <div id="schedule-container" class="my-4">
             <div class="my-5">
-                <table class="table table-striped table-hover" id="scoreTable">
+                <table class="table table-striped table-hover" id="studentTable">
                     <thead>
                       <tr>
                         <th scope="col" class="col-md-1">NIM</th>
                         <th scope="col" class="col-md-3">Name</th>
-                        <th scope="col" class="col-md-1">Score</th>
-                        <th scope="col" class="col-md-1">Pass</th>
+                        <th scope="col" class="col-md-1">Class</th>
+                        <th scope="col" class="col-md-1">Campus</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td scope="row">2201786036</th>
                         <td>Shania Priccilia</td>
-                        <td>90</td>
-                        <td>Pass</td>
+                        <td>BG02</td>
+                        <td>CSALS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201790120</th>
                         <td>Joan Christina Bahagiono</td>
-                        <td>95</td>
-                        <td>Pass</td>
+                        <td>BG02</td>
+                        <td>CSALS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201786011</th>
                         <td>Valencia Verena</td>
-                        <td>84</td>
-                        <td>Pass</td>
+                        <td>B901</td>
+                        <td>CSALS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201733036</th>
                         <td>Shinta Dewi</td>
-                        <td>76</td>
-                        <td>Pass</td>
+                        <td>B111</td>
+                        <td>CSBKS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201711222</th>
                         <td>Hossana Adinna Putri</td>
-                        <td>92</td>
-                        <td>Pass</td>
+                        <td>B111</td>
+                        <td>CSBKS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201792022</th>
                         <td>Ucup Sentosa</td>
-                        <td>50</td>
-                        <td>Not Pass</td>
+                        <td>XN01</td>
+                        <td>CSBDG</td>
                       </tr>
                       <tr>
                         <td scope="row">2201712902</th>
                         <td>James Bond</td>
-                        <td>12</td>
-                        <td>Not Pass</td>
+                        <td>B701</td>
+                        <td>CSALS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201786011</th>
                         <td>Andrew Julisar</td>
-                        <td>80</td>
-                        <td>Pass</td>
+                        <td>XA01</td>
+                        <td>CSBDG</td>
                       </tr>
                       <tr>
                         <td scope="row">2201782036</th>
                         <td>Wenny Firstriany</td>
-                        <td>90</td>
-                        <td>Pass</td>
+                        <td>B901</td>
+                        <td>CSALS</td>
                       </tr>
                       <tr>
                         <td scope="row">2201733677</th>
                         <td>Jasmine Tanti</td>
-                        <td>88</td>
-                        <td>Pass</td>
+                        <td>BG02</td>
+                        <td>CSALS</td>
                       </tr>
                     </tbody>
                 </table>
@@ -166,7 +174,7 @@
       <p>Contact Us: <a class="link" href="https://linktr.ee/OfficialAccountSlc" target="_blank">SLC Official Account</a></p>
     </footer>
     <script>
-        $('#scoreTable').DataTable();
+        $('#studentTable').DataTable();
     </script>
 </body>
 </html>
